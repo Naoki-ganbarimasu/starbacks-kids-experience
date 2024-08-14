@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import React, { useEffect } from 'react';
 
 const CoffeeBeans: React.FC = () => {
@@ -22,6 +23,7 @@ const CoffeeBeans: React.FC = () => {
     <div className='m-10'>
       {/* SpeakerDeck埋め込みスクリプトを配置 */}
       <div className="speakerdeck-embed-container"></div>
+      <Link href={"/create-tunber"} className="btn btn-accent text-white">タンブラー作りへ</Link>
     </div>
   );
 };

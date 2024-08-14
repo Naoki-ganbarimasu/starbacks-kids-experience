@@ -25,16 +25,16 @@ const Navbar = () => {
           tabIndex={0}
           className="flex menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
           <li><Link href={"/coffee"}>コーヒ豆の説明</Link></li>
-          <li><Link href={"/createTunber"}>タンブラー作り</Link></li>
+          <li><Link href={"/create-tunber"}>タンブラー作り</Link></li>
           <li><Link href={"/"}>バリスタ体験</Link></li>
         </ul>
       </div>
-      <a className="btn btn-ghost text-xl">kidsバリスタ体験会</a>
+      <Link href={"/"} className="btn btn-ghost text-xl">kidsバリスタ体験会</Link>
     </div>
     <div className="navbar-center lg:flex">
       <ul className="menu menu-horizontal px-1">
       <li><Link href={"/coffee"}>コーヒ豆の説明</Link></li>
-          <li><Link href={"/createTunber"}>タンブラー作り</Link></li>
+          <li><Link href={"/create-tunber"}>タンブラー作り</Link></li>
           <li><Link href={"/experience"}>バリスタ体験</Link></li>
           </ul>
     </div>

@@ -7,7 +7,7 @@ import Link from "next/link";
 const Tabs = () => {
   return (
     <>
-    <div className="card card-compact bg-base-100 w-3/5 shadow-xl mx-auto my-auto">
+    <div className="card card-compact bg-base-100 w-3/5 shadow-xl mx-auto mt-40">
   <figure>
     <Image
       className="rounded-t-lg"
