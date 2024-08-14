@@ -42,6 +42,8 @@ const CreatTnmbler = () => {
           </li>
         </ul>
       </div>
+      <div>
+
       {step1Complete && step2Complete ? (
         <div className="m-10">
           <h1 className="text-xl font-bold">完成しました！</h1>
@@ -52,7 +54,7 @@ const CreatTnmbler = () => {
             height={300}
             src="/omedeto.png"
             alt="Shoes"
-          />
+            />
           <Link href="/experience" className="btn btn-accent text-white">
             バリスタ体験へ
           </Link>
@@ -67,7 +69,7 @@ const CreatTnmbler = () => {
                 height={300}
                 src="/gara.png"
                 alt="Shoes"
-              />
+                />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Step1:　好きな柄をえらぼう</h2>
@@ -80,7 +82,7 @@ const CreatTnmbler = () => {
                     step1Complete ? "btn-gray-700" : "btn-accent"
                   }`}
                   onClick={handleStep1Complete}
-                >
+                  >
                   {step1Complete ? "完了済み" : "完了にする"}
                 </button>
               </div>
@@ -94,7 +96,7 @@ const CreatTnmbler = () => {
                 height={300}
                 src="/tumbler.png"
                 alt="Shoes"
-              />
+                />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Step2:　タンブラーをデザインしよう</h2>
@@ -108,7 +110,7 @@ const CreatTnmbler = () => {
                   }`}
                   onClick={handleStep2Complete}
                   disabled={!step1Complete}
-                >
+                  >
                   {step2Complete ? "完了済み" : "完了にする"}
                 </button>
               </div>
@@ -116,6 +118,7 @@ const CreatTnmbler = () => {
           </div>
         </main>
       )}
+      </div>
     </div>
   );
 };
